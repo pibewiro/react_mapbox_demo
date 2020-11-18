@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  width:900px;
+  height:900px;
+  margin:0 auto;
+  padding-top: 100px;
 }
 
 .App-logo {
@@ -35,4 +38,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.marker-btn{
+  background: none;
+  border:none;
+  cursor:pointer;
+  position: relative;
+}
+
+.marker-btn img{
+  width:20px;
+height:20px;
+}
+
+.hoverDiv{
+  display: none;
+  background: red;
+  position: absolute;
+  top:-150px;
+  left:0;
+  width: 150px;
+  height: 150px;
+}
+
+.hoverDiv:hover{
+  display: block;
+}
+.marker-btn:hover ~ .hoverDiv{
+  display: block;
+
 }
